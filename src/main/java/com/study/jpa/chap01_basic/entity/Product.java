@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "tbl_product")
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "prod_id")
@@ -34,12 +35,16 @@ public class Product {
 
     @UpdateTimestamp
     private LocalDateTime updateDate;
-public enum Category {
-    FOOD,FASHION, ELECTRONIC
+
+    public enum Category {
+        FOOD, FASHION, ELECTRONIC
+    }
+
 }
 
 
-}
+
+
 
 
 
